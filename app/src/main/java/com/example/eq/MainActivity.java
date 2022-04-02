@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
        TextView text = (TextView)findViewById(R.id.textView);
        String a = text.getText().toString();
 
-        User user = new User(a, "dasfsadfsa@gmaail.com");
+        User user = new User("123",a, "dasfsadfsa@gmaail.com");
 
-       mDatabase.child("users").child("userId").child("username").setValue(user.username);
+       mDatabase.child("users").child("userId").child("username").setValue(user.getUsername());
 
 
     }
