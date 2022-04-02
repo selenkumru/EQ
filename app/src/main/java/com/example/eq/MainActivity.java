@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
-    Button Kaydol;
+    Button KaydolButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         //s
         InitializationComponents();
-        Kaydol.setOnClickListener(new View.OnClickListener() {
+        KaydolButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent Kaydol_page = new Intent(getApplicationContext(), Kaydol.class);
@@ -32,34 +32,36 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        mDatabase = FirebaseDatabase.getInstance().getReference("message");
+      mDatabase = FirebaseDatabase.getInstance().getReference("message");
 
         mDatabase.setValue("Hello, World!");
-        Button button = (Button)findViewById(R.id.button);
+        Button button = (Button)findViewById(R.id.buttonGirisYap);
         button.setOnClickListener(new View.OnClickListener() {
-            @Override
+           @Override
             public void onClick(View view) {
                 buton();
             }
-        });
+      });
     }
 
     public void buton(){
 
        TextView text = (TextView)findViewById(R.id.textView);
-        String a = text.getText().toString();
+       String a = text.getText().toString();
 
         User user = new User(a, "dasfsadfsa@gmaail.com");
 
-        mDatabase.child("users").child("userId").child("username").setValue(user.username);
+       mDatabase.child("users").child("userId").child("username").setValue(user.username);
 
 
     }
 //s
-public void InitializationComponents() {
 
-    Kaydol = findViewById(R.id.buttonKaydol);
 
-}
+        public void InitializationComponents() {
+
+            KaydolButton = findViewById(R.id.buttonKaydol);
+
+        }
 
 }

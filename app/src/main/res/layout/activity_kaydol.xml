@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/rectangle_1"
+        android:src="@drawable/rectangle"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="36dp"></ImageView>
 
@@ -21,7 +21,8 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="186dp" />
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextPhone"
@@ -30,7 +31,8 @@
         android:ems="10"
         android:inputType="phone"
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="257dp" />
+        tools:layout_editor_absoluteY="257dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -39,7 +41,8 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="343dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -49,7 +52,8 @@
         android:inputType="textPersonName"
         android:text=""
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="59dp" />
+        tools:layout_editor_absoluteY="59dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -58,7 +62,8 @@
         android:text="E mail : "
         android:textSize="50px"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="205dp" />
+        tools:layout_editor_absoluteY="205dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,7 +72,8 @@
         android:text="Number : "
         android:textSize="50px"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteY="276dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView5"
@@ -76,15 +82,17 @@
         android:text="Password : "
         android:textSize="50px"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:layout_editor_absoluteY="362dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kaydol"
         tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="474dp" />
+        tools:layout_editor_absoluteY="474dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
@@ -93,7 +101,8 @@
         android:text="Name : "
         android:textSize="50px"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="78dp" />
+        tools:layout_editor_absoluteY="78dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
@@ -102,7 +111,8 @@
         android:text="Surname : "
         android:textSize="50px"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="140dp" />
+        tools:layout_editor_absoluteY="140dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -112,6 +122,7 @@
         android:inputType="textPersonName"
         android:text=""
         tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="121dp" />
+        tools:layout_editor_absoluteY="121dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

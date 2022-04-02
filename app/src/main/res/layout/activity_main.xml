@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/rectangle_1"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp"
-        ></ImageView>
+        android:src="@drawable/rectangle"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp"></ImageView>
+
     <Button
         android:id="@+id/buttonGirisYap"
         android:layout_width="wrap_content"
@@ -42,8 +43,11 @@
         android:ems="10"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints"
+
+        android:layout_alignParentRight="true"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="338dp"
+        />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -52,8 +56,9 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         tools:ignore="MissingConstraints"
+        android:layout_alignParentRight="true"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="278dp" />
+        tools:layout_editor_absoluteY="270dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -61,9 +66,10 @@
         android:layout_height="32dp"
         android:text="Email : "
         android:textSize="50px"
-        tools:ignore="MissingConstraints"
+        android:layout_alignParentRight="true"
         tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="283dp" />
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -71,18 +77,22 @@
         android:layout_height="35dp"
         android:text="Şifre : "
         android:textSize="50px"
-        tools:ignore="MissingConstraints"
+        android:layout_alignParentRight="true"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="348dp" />
+        tools:layout_editor_absoluteY="348dp"
+        tools:ignore="MissingConstraints" />
 
     <CheckedTextView
         android:id="@+id/checkedTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hesabınız yok mu ? "
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="589dp"
-        tools:ignore="MissingConstraints" />
+        android:textSize="50px"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="586dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
