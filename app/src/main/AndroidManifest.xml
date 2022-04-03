@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EQ">
         <activity
+            android:name=".GirisBasarili"
+            android:exported="false" />
+        <activity
             android:name=".NoDogrulama"
             android:exported="false" />
         <activity
