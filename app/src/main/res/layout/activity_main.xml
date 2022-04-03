@@ -11,8 +11,79 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/rectangle"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-16dp"></ImageView>
+        tools:layout_editor_absoluteX="-49dp"
+        tools:layout_editor_absoluteY="35dp"></ImageView>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="348dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="412dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="416dp"
+        android:text="Email : "
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="348dp"
+        android:text="Şifre : "
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Hesabınız yok mu ? "
+        android:textColor="@color/white"
+        android:textSize="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonGirisYap"
@@ -36,63 +107,7 @@
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:ignore="MissingConstraints"
 
-        android:layout_alignParentRight="true"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="338dp"
-        />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:ignore="MissingConstraints"
-        android:layout_alignParentRight="true"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="270dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="72dp"
-        android:layout_height="32dp"
-        android:text="Email : "
-        android:textSize="50px"
-        android:layout_alignParentRight="true"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="283dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="74dp"
-        android:layout_height="35dp"
-        android:text="Şifre : "
-        android:textSize="50px"
-        android:layout_alignParentRight="true"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="348dp"
-        tools:ignore="MissingConstraints" />
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hesabınız yok mu ? "
-        android:textSize="50px"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="586dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
